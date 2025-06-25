@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT_REPO="https://github.com/alist-org/alist.git"
+GIT_REPO="https://github.com/OpenListTeam/OpenList.git"
 
 function to_int() {
     echo $(echo "$1" | grep -oE '[0-9]+' | tr -d '\n')
@@ -37,7 +37,7 @@ echo "alist_version=$LATEST_VER" >> "$GITHUB_ENV"
 VER=$(cat "$VERSION_FILE")
 
 if [ -z "$VER" ]; then
-  VER="v3.25.1"
+  VER="v4.0.3"
   echo "No version file, use default version ${VER}"
 fi
 
